@@ -1,0 +1,139 @@
+#bo{
+  font-family:'Ubuntu', sans-serif;
+}
+#iitd{
+  padding:0 15px 15px 15px;
+}
+#op{
+  padding-left: 3.5rem;
+}
+
+
+.links {
+  color: black;
+}
+
+.navbar-brand {
+  margin-left: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #f1f1f1
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  padding: 12px;
+}
+
+#heading {
+  font-size: 1.8rem;
+  margin-left: 3.5rem;
+}
+
+#about {
+  background-image: url("background_about.jpg");
+  padding: 100px 35px;
+}
+
+.myPhoto {
+  border-radius: 100%;
+  padding: 4.4rem;
+  padding-top: 5rem;
+}
+
+#iit {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 4.4rem;
+  font-family: 'Merienda', cursive;
+}
+#quali{
+  padding:7rem 6rem;
+  background-color: #f8f5f1;
+}
+p{
+font-size: 2rem;
+line-height: 2;
+}
+.info{
+  padding: 7px 15px;
+}
+#skillsetOP{
+  background-color: black;
+  padding: 7px 15px;
+  margin:0;
+}
+.skillInfo{
+  margin: 30px 0 30px 0;
+  color: white;
+  padding: 15px 55px;
+  line-height: 1.8;
+}
+.skillPhoto{
+  margin-top: 40px;
+  width: 200px;
+}
+.schools{
+  margin-bottom: 20px;
+}
+#dav{
+  margin-bottom: 25px;
+}
+#carin{
+  padding: 30px 0 30px 0;
+}
+.carousel-item{
+  height: 35rem;
+  margin-right: 0;
+  margin-left: 0;
+}
+.card{
+  text-align: center;
+
+}
+#projects{
+  background-color:#f8f5f1;
+  padding: 4.5rem 6rem 8rem 6rem;
+}
+.card-body{
+    background-color:#f9f3f3;
+}
+.others{
+  margin-bottom: 3.5rem;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.projectInfo {
+  margin: 30px 0 30px 0;
+  color:black;
+  padding: 15px 55px;
+  line-height: 1.5;
+}
+.Horizontal_style {
+border-style: dotted;
+width: 25%;
+border-width: 8px 0px 0px;
+border-color: black;
+background-color: #f9f3f3;
+opacity: 100;
+}
+#button_forward {
+  color: black;
+  background-color: black;
+  margin-left: 6rem;
+}
+#button_prev {
+  color: black;
+  background-color: black;
+  margin-right: 6rem;
+}
+#Achievements {
+  background-color:black;
+  padding: 4.5rem 6rem 8rem 6rem;
+}
