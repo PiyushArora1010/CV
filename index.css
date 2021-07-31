@@ -20,7 +20,7 @@
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  background-color: #BB8760
+  background-color: #3EDBF0
 }
 
 .nav-link {
@@ -55,7 +55,7 @@ body {
 }
 #quali{
   padding:7rem 6rem;
-  background-color: #BB8760;
+  background-color: #3EDBF0;
 }
 p{
 font-size: 2rem;
@@ -102,7 +102,7 @@ line-height: 2;
   padding: 4.5rem 6rem 8rem 6rem;
 }
 .card-body{
-    background-color:#BB8760;
+    background-color:#3EDBF0;
 }
 .others{
   margin-bottom: 3.5rem;
@@ -120,7 +120,7 @@ border-style: dotted;
 width: 25%;
 border-width: 8px 0px 0px;
 border-color: black;
-background-color: #BB8760;
+background-color: #3EDBF0;
 opacity: 100;
 }
 #button_forward {
