@@ -1371,17 +1371,21 @@
 }
 
 /* ============================================
-   CV PAGE STYLES
-   Add these to your existing style.css
+   CV PAGE STYLES (responsive + mobile-friendly)
    ============================================ */
 
-/* CV Header with Download Button */
+/* Make the CV page container a bit wider on desktop for readability */
+.cv-page .container {
+  max-width: 1200px;
+}
+
+/* Header */
 .cv-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .cv-header h2 {
@@ -1392,100 +1396,78 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.7rem 1.2rem;
   background: #2563eb;
-  color: white;
+  color: #fff;
   text-decoration: none;
-  border-radius: 6px;
-  font-weight: 500;
+  border-radius: 10px;
+  font-weight: 600;
   font-size: 0.95rem;
-  transition: background 0.2s ease, transform 0.1s ease;
+  transition: transform 0.15s ease, background 0.2s ease;
   white-space: nowrap;
+  box-shadow: var(--shadow-sm);
+}
+.cv-download-btn:hover { background: #1d4ed8; transform: translateY(-1px); }
+.cv-download-btn:active { transform: translateY(0); }
+
+/* Viewer wrapper: remove clipping and center */
+#cv .inner {
+  overflow: visible; /* was hidden; can clip embedded PDF renderers */
 }
 
-.cv-download-btn:hover {
-  background: #1d4ed8;
-  transform: translateY(-1px);
-}
-
-.cv-download-btn:active {
-  transform: translateY(0);
-}
-
-.cv-download-btn svg {
-  flex-shrink: 0;
-}
-
-/* CV Viewer */
+/* CV Viewer:
+   - Keep it centered
+   - True A4 portrait aspect ratio (1 : 1.414)
+   - Height derives from width so it scales nicely on any screen
+*/
 .cv-viewer {
   width: 100%;
+  border-radius: 12px;
   border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  overflow: auto;
   background: #f9fafb;
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
-  max-height: 85vh;
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  padding: 0;
 }
 
-.cv-viewer iframe {
+/* The actual embed “box” that controls sizing */
+.cv-frame {
   width: 100%;
-  height: 1100px;
-  min-height: 1100px;
-  border: none;
-  display: block;
+  max-width: 100%;
+  aspect-ratio: 1 / 1.414;      /* A4 portrait */
+  /* For very short viewports, don’t let it be absurdly tall */
+  max-height: calc(100dvh - 20vh); /* leave room for header/footer */
 }
 
-/* CV Note */
+/* Make all embed types fill the box */
+.cv-frame iframe,
+.cv-frame object,
+.cv-frame embed {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Note under the viewer */
 .cv-note {
-  margin-top: 1rem;
+  margin-top: 0.75rem;
   text-align: center;
   font-size: 0.9rem;
   color: #6b7280;
 }
+.cv-note a { color: #2563eb; text-decoration: none; }
+.cv-note a:hover { text-decoration: underline; }
 
-.cv-note a {
-  color: #2563eb;
-  text-decoration: none;
-}
-
-.cv-note a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .cv-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .cv-download-btn {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .cv-viewer {
-    max-height: 70vh;
-  }
-
-  .cv-viewer iframe {
-    height: 900px;
-    min-height: 900px;
-  }
+/* Mobile tweaks */
+@media (max-width: 860px) {
+  .cv-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .cv-download-btn { width: 100%; justify-content: center; }
+  .cv-frame { max-height: calc(100dvh - 24vh); }
 }
 
 @media (max-width: 480px) {
-  .cv-viewer {
-    max-height: 60vh;
-  }
-
-  .cv-viewer iframe {
-    height: 800px;
-    min-height: 800px;
-  }
-
-  .cv-download-btn {
-    padding: 0.65rem 1.25rem;
-    font-size: 0.9rem;
-  }
+  .cv-frame { max-height: calc(100dvh - 28vh); }
 }
