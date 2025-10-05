@@ -1369,3 +1369,123 @@
     margin-left: 0.05rem;
   }
 }
+
+/* ============================================
+   CV PAGE STYLES
+   Add these to your existing style.css
+   ============================================ */
+
+/* CV Header with Download Button */
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.cv-header h2 {
+  margin: 0;
+}
+
+.cv-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background 0.2s ease, transform 0.1s ease;
+  white-space: nowrap;
+}
+
+.cv-download-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.cv-download-btn:active {
+  transform: translateY(0);
+}
+
+.cv-download-btn svg {
+  flex-shrink: 0;
+}
+
+/* CV Viewer */
+.cv-viewer {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: auto;
+  background: #f9fafb;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  max-height: 85vh;
+}
+
+.cv-viewer iframe {
+  width: 100%;
+  height: 1100px;
+  min-height: 1100px;
+  border: none;
+  display: block;
+}
+
+/* CV Note */
+.cv-note {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.cv-note a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.cv-note a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cv-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cv-download-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cv-viewer {
+    max-height: 70vh;
+  }
+
+  .cv-viewer iframe {
+    height: 900px;
+    min-height: 900px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-viewer {
+    max-height: 60vh;
+  }
+
+  .cv-viewer iframe {
+    height: 800px;
+    min-height: 800px;
+  }
+
+  .cv-download-btn {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.9rem;
+  }
+}
