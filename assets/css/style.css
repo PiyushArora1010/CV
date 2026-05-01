@@ -1,7 +1,7 @@
 /* =========================================================
    Academic Theme — Ink & Parchment
    ========================================================= */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
   /* Deep ink — typeset on near-black */
@@ -46,9 +46,9 @@ html, body { height: 100%; }
 body {
   margin: 0;
   color: var(--fg);
-  font-family: 'IBM Plex Sans', system-ui, -apple-system, "Segoe UI", sans-serif;
-  line-height: 1.65;
-  font-size: 0.9rem;
+  font-family: 'EB Garamond', Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+  font-size: 1rem;
   background: var(--bg-2);
   /* Subtle vellum grain — purely visual, non-interactive */
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.022'/%3E%3C/svg%3E");
@@ -59,24 +59,24 @@ body {
    ========================================================= */
 h1, h2, h3 {
   margin: .2rem 0 .4rem;
-  line-height: 1.2;
-  font-family: 'EB Garamond', Georgia, serif;
+  line-height: 1.15;
+  font-family: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0.01em;
   color: var(--fg);
 }
-h1 { font-size: clamp(1.8rem, 1.2rem + 1.8vw, 2.4rem); }
-h2 { font-size: clamp(1.2rem, 0.9rem + 0.7vw, 1.5rem); }
-h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
+h1 { font-size: clamp(2rem, 1.4rem + 1.8vw, 2.8rem); font-weight: 300; letter-spacing: 0.02em; }
+h2 { font-size: clamp(1.4rem, 1rem + 0.7vw, 1.75rem); font-weight: 400; }
+h3 { font-size: clamp(1.1rem, 0.9rem + 0.5vw, 1.3rem); font-weight: 400; }
 
 .hero-tagline {
   margin: .2rem 0 .6rem;
   color: var(--muted);
   font-style: italic;
-  font-weight: 400;
-  font-size: 1.05rem;
-  font-family: 'EB Garamond', Georgia, serif;
-  line-height: 1.5;
+  font-weight: 300;
+  font-size: 1.15rem;
+  font-family: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
+  line-height: 1.55;
 }
 
 /* =========================================================
@@ -127,10 +127,10 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
 
 /* Wordmark */
 .nav-logo {
-  font-weight: 600;
-  font-size: 0.85rem;
-  font-family: 'IBM Plex Sans', sans-serif;
-  letter-spacing: 0.3px;
+  font-weight: 700;
+  font-size: 0.78rem;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  letter-spacing: 0.05em;
   color: var(--fg);
   text-decoration: none;
   display: flex;
@@ -199,10 +199,11 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
   background: transparent;
   color: var(--muted);
   font-weight: 400;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   border-bottom: 1px solid transparent;
   transition: color var(--fast), border-color var(--fast);
   letter-spacing: 0.01em;
+  font-family: 'Libre Baskerville', Georgia, serif;
 }
 .nav-menu a:hover {
   color: var(--fg);
@@ -306,8 +307,8 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
   color: #e8e2d6;
   background: var(--brand3);
   border: 1px solid var(--brand-border-strong);
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 0.85rem;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0.2px;
   box-shadow: var(--shadow-sm);
@@ -349,7 +350,7 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
   border: 1px solid var(--brand-border-weak);
   color: var(--muted);
   font-size: 0.78rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Courier Prime', 'Courier New', monospace;
   letter-spacing: 0.02em;
 }
 
@@ -454,7 +455,7 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
   align-items: center;
   justify-content: center;
   font-size: 0.78rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Courier Prime', 'Courier New', monospace;
   letter-spacing: 0.02em;
 }
 
@@ -475,7 +476,7 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
 .education-item:hover { box-shadow: var(--shadow-md); border-color: var(--brand-border-strong); }
 
 .education-header { margin-bottom: 5px; }
-.institution { margin: 0 0 3px; color: var(--brand); font-size: 1rem; font-weight: 600; font-family: 'EB Garamond', Georgia, serif; }
+.institution { margin: 0 0 3px; color: var(--brand); font-size: 1.05rem; font-weight: 500; font-family: 'Cormorant Garamond', 'EB Garamond', Georgia, serif; }
 .degree { display: block; font-weight: 500; font-size: 0.85rem; color: var(--fg); margin-bottom: 4px; }
 
 .education-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 6px; font-size: 0.78rem; color: var(--muted); }
@@ -484,7 +485,7 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
   background: transparent;
   border: 1px solid var(--brand-border-weak);
   border-radius: 1px;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Courier Prime', 'Courier New', monospace;
   font-weight: 500;
 }
 .gpa { border-color: var(--brand-border-strong); color: var(--brand); }
@@ -514,11 +515,10 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
 }
 .stat-box:hover { box-shadow: var(--shadow-md); border-color: var(--brand-border-strong); }
 .stat-number {
-  font-size: 2.2rem;
-  font-weight: 500;
+  font-size: 2.6rem;
+  font-weight: 300;
   color: var(--brand);
-  font-family: 'EB Garamond', Georgia, serif;
-  /* Tabular numerals for clean alignment */
+  font-family: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
   font-variant-numeric: tabular-nums;
 }
 .stat-label  { font-size: .82rem; color: var(--muted); margin-top: .35rem; font-weight: 500; letter-spacing: 0.03em; }
@@ -599,7 +599,7 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
   color: var(--muted);
   font-size: 0.73rem;
   margin-bottom: 5px;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Courier Prime', 'Courier New', monospace;
   letter-spacing: .03em;
 }
 .timeline-title { font-size: 0.88rem; font-weight: 600; margin-bottom: 4px; color: var(--fg); }
@@ -639,7 +639,7 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
   pointer-events: none;
   transition: all .2s ease;
   z-index: 1000;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Courier Prime', 'Courier New', monospace;
   box-shadow: var(--shadow-md);
 }
 .tooltip::after {
@@ -702,7 +702,7 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
 .publication-item:hover { box-shadow: var(--shadow-md); border-color: var(--brand-border-strong); }
 .publication-preprint { border-left-color: rgba(181,168,138,.2); }
 
-.pub-title { margin: 0 0 6px; font-size: 1rem; font-family: 'EB Garamond', Georgia, serif; font-weight: 500; line-height: 1.4; }
+.pub-title { margin: 0 0 6px; font-size: 1.1rem; font-family: 'Cormorant Garamond', 'EB Garamond', Georgia, serif; font-weight: 500; line-height: 1.35; }
 .pub-authors { margin: 0 0 6px; font-size: 0.82rem; color: var(--muted); line-height: 1.5; font-style: italic; }
 .pub-venue-row { margin-bottom: 8px; }
 
@@ -715,7 +715,7 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
   font-weight: 600;
   color: var(--brand);
   display: inline-block;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Courier Prime', 'Courier New', monospace;
   letter-spacing: .05em;
   text-transform: uppercase;
 }
@@ -730,7 +730,7 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
   text-decoration: none;
   border-radius: 1px;
   font-size: 0.78rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Courier Prime', 'Courier New', monospace;
   border: 1px solid var(--brand-border-weak);
   transition: border-color var(--fast), background var(--fast);
   display: inline-flex;
@@ -745,7 +745,7 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
 /* =========================================================
    Project Metadata
    ========================================================= */
-.project-meta { font-size: 0.78rem; color: var(--muted); margin: 0 0 5px; font-weight: 500; font-family: 'IBM Plex Mono', monospace; }
+.project-meta { font-size: 0.78rem; color: var(--muted); margin: 0 0 5px; font-weight: 500; font-family: 'Courier Prime', 'Courier New', monospace; }
 .project-tech { margin-top: auto; padding-top: 6px; }
 
 /* =========================================================
@@ -765,7 +765,7 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
 .internship-item:hover { box-shadow: var(--shadow-md); border-color: var(--brand-border-strong); }
 
 .internship-header { display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 8px; margin-bottom: 6px; }
-.internship-title { margin: 0; font-size: 0.95rem; font-family: 'EB Garamond', Georgia, serif; font-weight: 500; }
+.internship-title { margin: 0; font-size: 1rem; font-family: 'Cormorant Garamond', 'EB Garamond', Georgia, serif; font-weight: 500; }
 .internship-date {
   padding: 2px 6px;
   background: transparent;
@@ -776,7 +776,7 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
   color: var(--muted);
   white-space: nowrap;
   flex-shrink: 0;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Courier Prime', 'Courier New', monospace;
   letter-spacing: 0.03em;
 }
 .internship-org { margin: 0 0 6px; font-size: 0.82rem; color: var(--muted); line-height: 1.5; font-style: italic; }
@@ -822,7 +822,7 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
   border-radius: 2px;
   font-weight: 500;
   font-size: 0.85rem;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Courier Prime', 'Courier New', monospace;
   transition: background var(--fast), border-color var(--fast);
   white-space: nowrap;
   box-shadow: var(--shadow-sm);
@@ -852,7 +852,7 @@ h3 { font-size: clamp(1rem, 0.8rem + 0.5vw, 1.2rem); }
 .cv-frame object,
 .cv-frame embed { display: block; width: 100%; height: 100%; border: 0; }
 
-.cv-note { margin-top: .65rem; text-align: center; font-size: 0.82rem; color: var(--muted); font-family: 'IBM Plex Mono', monospace; }
+.cv-note { margin-top: .65rem; text-align: center; font-size: 0.82rem; color: var(--muted); font-family: 'Courier Prime', 'Courier New', monospace; }
 .cv-note a { color: var(--brand2); text-decoration: none; }
 .cv-note a:hover { text-decoration: underline; }
 
