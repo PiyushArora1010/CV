@@ -4,7 +4,6 @@
   <meta charset="utf-8" />
   <title>Research - Piyush Arora</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Lora:wght@600;700&display=swap" rel="stylesheet">
   <meta name="description" content="Research by Piyush Arora - Publications and research experience in multimodal AI and machine learning." />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="icon" href="assets/img/favicon.ico" />
@@ -13,21 +12,21 @@
   <!-- Header -->
   <header class="site-header">
     <nav class="nav">
-      <a class="nav-logo" href="index.html" aria-label="Home">
-        Piyush Arora
+      <div class="nav-brand">
+        <a class="nav-logo" href="index.html">Piyush Arora</a>
         <span class="logo-icons">
           <a href="https://www.linkedin.com/in/piyush-arora-69ba4512a/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
               <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
             </svg>
           </a>
-          <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" rel="noopener" aria-label="Google Scholar" class="social-icon">
+          <a href="https://scholar.google.com/citations?user=ZEF8P2QAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" class="social-icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
               <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
             </svg>
           </a>
         </span>
-      </a>
+      </div>
       <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false">Menu</button>
       <ul id="nav-menu" class="nav-menu">
         <li><a href="about.html">About</a></li>
@@ -41,92 +40,49 @@
 
   <!-- Main -->
   <main class="container">
-    
+
     <!-- Publications -->
     <section class="section" id="publications">
       <div class="inner">
         <h2>Publications</h2>
         <p class="section-note">* denotes equal contribution</p>
 
-        <!-- Publication 1: INTERSPEECH 2026 -->
         <article class="publication-item">
-          <h3 class="pub-title">
-            VIB-AVSR: Variational Information Bottleneck for Noise-Robust LLM-Based Audio-Visual Speech Recognition
-          </h3>
-          <p class="pub-authors">
-            P. Arora*, N. Singh*, U. Cappellazzo, S. Petridis, M. Pantic
-          </p>
-          <div class="pub-venue-row">
-            <span class="venue-badge">INTERSPEECH 2026</span>
-          </div>
-          <!-- <div class="pub-links">
-            <a href="https://github.com/vl2g/MPA" target="_blank" rel="noopener" class="pub-link pub-link-code">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-              Code
-            </a>
-            <a href="https://arxiv.org/pdf/2509.16633" target="_blank" rel="noopener" class="pub-link pub-link-paper">Paper</a>
-          </div> -->
-        </article>
-
-        <!-- Publication 1: EMNLP 2025 -->
-        <article class="publication-item">
-          <h3 class="pub-title">
-            When Big Models Train Small Ones: Label-Free Model Parity Alignment for Efficient Visual Question Answering with Small VLMs
-          </h3>
-          <p class="pub-authors">
-            A. Subramanyam*, N. Singh*, P. Arora*, A. Mishra
-          </p>
-          <div class="pub-venue-row">
-            <span class="venue-badge">EMNLP 2025</span>
-          </div>
+          <h3 class="pub-title">VIB-AVSR: Variational Information Bottleneck for Noise-Robust LLM-Based Audio-Visual Speech Recognition</h3>
+          <p class="pub-authors"><span class="me">P. Arora</span>*, N. Singh*, U. Cappellazzo, S. Petridis, M. Pantic</p>
+          <div class="pub-venue-row"><span class="venue-badge">INTERSPEECH 2026 <span class="oral">(Oral)</span></span></div>
           <div class="pub-links">
-            <a href="https://github.com/vl2g/MPA" target="_blank" rel="noopener" class="pub-link pub-link-code">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-              Code
-            </a>
-            <a href="https://arxiv.org/pdf/2509.16633" target="_blank" rel="noopener" class="pub-link pub-link-paper">Paper</a>
+            <a href="https://arxiv.org/pdf/2606.29632" target="_blank" rel="noopener" class="pub-link">Paper</a>
           </div>
         </article>
 
-        <!-- Publication 2: WACV 2024 -->
         <article class="publication-item">
-          <h3 class="pub-title">
-            Hybrid Sample Synthesis-Based Debiasing of Classifier in Limited Data Setting
-          </h3>
-          <p class="pub-authors">
-            P. Arora*, P. Mazumder*
-          </p>
-          <div class="pub-venue-row">
-            <span class="venue-badge">WACV 2024</span>
-          </div>
+          <h3 class="pub-title">BLADE: Bias-Linked Adaptive DEbiasing</h3>
+          <p class="pub-authors"><span class="me">P. Arora</span>*, N. Singh*, V. Diwan*, P. Mazumder</p>
+          <div class="pub-venue-row"><span class="venue-badge">Under review</span></div>
           <div class="pub-links">
-            <a href="https://github.com/PiyushArora1010/Hybrid-Sample-Synthesis-based-Debiasing-of-Classifier-in-Limited-Data-Setting" target="_blank" rel="noopener" class="pub-link pub-link-code">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-              Code
-            </a>
-            <a href="https://openaccess.thecvf.com/content/WACV2024/papers/Arora_Hybrid_Sample_Synthesis-Based_Debiasing_of_Classifier_in_Limited_Data_Setting_WACV_2024_paper.pdf" target="_blank" rel="noopener" class="pub-link pub-link-paper">Paper</a>
+            <a href="https://arxiv.org/pdf/2510.04174" target="_blank" rel="noopener" class="pub-link">Paper</a>
           </div>
         </article>
 
-        <!-- Publication 3: BLADE (Under Review) -->
         <article class="publication-item">
-          <h3 class="pub-title">
-            BLADE: Bias-Linked Adaptive DEbiasing
-          </h3>
-          <p class="pub-authors">
-            P. Arora*, N. Singh*, V. Diwan*, P. Mazumder
-          </p>
-          <div class="pub-venue-row">
-            <span class="venue-badge">Under Review</span>
-          </div>
+          <h3 class="pub-title">When Big Models Train Small Ones: Label-Free Model Parity Alignment for Efficient Visual Question Answering with Small VLMs</h3>
+          <p class="pub-authors">A. Subramanyam*, N. Singh*, <span class="me">P. Arora</span>*, A. Mishra</p>
+          <div class="pub-venue-row"><span class="venue-badge">EMNLP 2025</span></div>
           <div class="pub-links">
-            <a href="https://arxiv.org/pdf/2510.04174" target="_blank" rel="noopener" class="pub-link pub-link-paper">Paper</a>
+            <a href="https://arxiv.org/pdf/2509.16633" target="_blank" rel="noopener" class="pub-link">Paper</a>
+            <a href="https://github.com/vl2g/MPA" target="_blank" rel="noopener" class="pub-link">Code</a>
+          </div>
+        </article>
+
+        <article class="publication-item">
+          <h3 class="pub-title">Hybrid Sample Synthesis-Based Debiasing of Classifier in Limited Data Setting</h3>
+          <p class="pub-authors"><span class="me">P. Arora</span>*, P. Mazumder*</p>
+          <div class="pub-venue-row"><span class="venue-badge">WACV 2024</span></div>
+          <div class="pub-links">
+            <a href="https://openaccess.thecvf.com/content/WACV2024/papers/Arora_Hybrid_Sample_Synthesis-Based_Debiasing_of_Classifier_in_Limited_Data_Setting_WACV_2024_paper.pdf" target="_blank" rel="noopener" class="pub-link">Paper</a>
+            <a href="https://arxiv.org/abs/2312.08288" target="_blank" rel="noopener" class="pub-link">arXiv</a>
+            <a href="https://github.com/PiyushArora1010/Hybrid-Sample-Synthesis-based-Debiasing-of-Classifier-in-Limited-Data-Setting" target="_blank" rel="noopener" class="pub-link">Code</a>
           </div>
         </article>
 
@@ -137,106 +93,113 @@
     <section class="section" id="internships">
       <div class="inner">
         <h2>Research Experience</h2>
-        
         <div class="internship-grid">
-          
-          <!-- Research Experience 1: CIRL-Faith -->
+
           <article class="internship-item">
             <div class="internship-header">
               <h3 class="internship-title">Improving Chain-of-Thought Faithfulness in LLMs</h3>
-              <span class="internship-date">Oct 2025 - Feb 2026</span>
+              <span class="internship-date">Oct 2025 &ndash; Sep 2026</span>
             </div>
-            <p class="internship-org">
-              <strong>Imperial College London</strong><br>
-              Supervisor: Dr. Oana-Maria Camburu
-            </p>
-            <p class="internship-description">
-              Developed CIRL-Faith, a concept-intervention based training algorithm that exposes and corrects reasoning chains misaligned with internal computations. Formulated RL-based post-training using Group Relative Policy Optimization (GRPO) with intervention and process driven reward signals. Evaluated across Qwen3-4B, Qwen3-8B, and Llama3.1-8B using established faithfulness metrics, achieving gains of up to 30 percent over respective base models.
-            </p>
+            <p class="internship-org"><strong>Imperial College London</strong> &middot; Supervisors: <a href="https://sites.google.com/view/oana-maria-camburu/" target="_blank" rel="noopener">Dr. Oana-Maria Camburu</a>, <a href="https://www.mariaperezortiz.com" target="_blank" rel="noopener">Dr. María Pérez-Ortiz</a>, Noah Y. Siegel &middot; <a href="https://github.com/PiyushArora1010/CIRL-Faith" target="_blank" rel="noopener">Code</a></p>
+            <ul class="pub-highlights">
+              <li>Developed <strong>I-FAITH</strong>, a reinforcement learning algorithm that uses counterfactual hint interventions to train LLMs to identify and verbalise the factors that causally influence their predictions, addressing a key AI-safety challenge in chain-of-thought monitoring.</li>
+              <li>Designed a frequency-based simulation reward with an adaptive answer-consistency constraint, mitigating reward hacking and balancing faithful reasoning against task accuracy using LUSPO-based policy optimisation.</li>
+              <li>Evaluated on Qwen3-4B, 8B and 14B across SNLI, ETHICS, and out-of-distribution loan-approval, diabetes-diagnosis and admissions tasks; improved average OOD faithfulness GMean from 29.4% to 58.7% and generalised to six unseen hint types.</li>
+            </ul>
             <ul class="pill-list">
-              <li>PyTorch</li>
-              <li>GRPO</li>
-              <li>LLM Evaluation</li>
+              <li>Reinforcement Learning</li>
+              <li>LLM Post-Training</li>
+              <li>Faithfulness</li>
+              <li>AI Safety</li>
             </ul>
           </article>
 
-          <!-- Research Experience 2: VIB-AVSR -->
           <article class="internship-item">
             <div class="internship-header">
-              <h3 class="internship-title">VIB-AVSR for Noise-Robust LLM-Based AVSR</h3>
-              <span class="internship-date">Nov 2025 - Mar 2026</span>
+              <h3 class="internship-title">Matryoshka-Based Neural Codec for Adaptive Speech Tokenization</h3>
+              <span class="internship-date">Apr 2026 &ndash; Present</span>
             </div>
-            <p class="internship-org">
-              <strong>Imperial College London</strong><br>
-              Supervisors: Dr. Umberto Cappellazzo, Dr. Stavros Petridis, Dr. Maja Pantic
-            </p>
-            <p class="internship-description">
-              Developed VIB-AVSR, an LLM-based audio-visual speech recognition model connecting pre-trained audio-visual encoders to an LLM backbone. Integrated Variational Information Bottleneck layers at targeted positions within the LLM backbone to regularize representations. Reduced performance degradation across multiple SNR levels and noise types without architectural modifications or additional training data.
-            </p>
+            <p class="internship-org"><strong>Imperial College London</strong> &middot; Supervisors: <a href="https://sites.google.com/site/mircoravanelli/" target="_blank" rel="noopener">Dr. Mirco Ravanelli</a>, <a href="https://umbertocappellazzo.github.io" target="_blank" rel="noopener">Dr. Umberto Cappellazzo</a>, <a href="https://www.linkedin.com/in/stavros-petridis-4609a93/" target="_blank" rel="noopener">Dr. Stavros Petridis</a></p>
+            <ul class="pub-highlights">
+              <li>Developed <em>Matry</em>-FocalCodec, extending FocalCodec with Matryoshka Representation Learning so that a single neural audio codec supports multiple configurations, instead of one separately trained model per setting.</li>
+              <li>Evaluated along two axes, code dimension and token rate, against separately trained FocalCodec baselines, retaining competitive performance across both within a single model.</li>
+            </ul>
             <ul class="pill-list">
-              <li>PyTorch</li>
-              <li>Audio-Visual Modeling</li>
-              <li>Speech Recognition</li>
+              <li>Neural Audio Codecs</li>
+              <li>Speech Tokenization</li>
+              <li>Representation Learning</li>
             </ul>
           </article>
 
-          <!-- Research Experience 3: StyleLip -->
+          <article class="internship-item">
+            <div class="internship-header">
+              <h3 class="internship-title">VIB-AVSR: Noise-Robust LLM-Based Audio-Visual Speech Recognition</h3>
+              <span class="internship-date">Nov 2025 &ndash; Mar 2026</span>
+            </div>
+            <p class="internship-org"><strong>Imperial College London</strong> &middot; Supervisors: <a href="https://umbertocappellazzo.github.io" target="_blank" rel="noopener">Dr. Umberto Cappellazzo</a>, <a href="https://www.linkedin.com/in/stavros-petridis-4609a93/" target="_blank" rel="noopener">Dr. Stavros Petridis</a>, <a href="https://ibug.doc.ic.ac.uk/maja/" target="_blank" rel="noopener">Dr. Maja Pantic</a> &middot; <a href="https://arxiv.org/pdf/2606.29632" target="_blank" rel="noopener">Paper</a></p>
+            <ul class="pub-highlights">
+              <li>Developed VIB-AVSR, an LLM-based audio-visual speech recognition model connecting pre-trained audio-visual encoders to an LLM backbone.</li>
+              <li>Integrated Variational Information Bottleneck layers at targeted positions within the LLM backbone to regularise representations, addressing the lack of explicit noise-robustness mechanisms in existing LLM-based AVSR models.</li>
+              <li>Reduced degradation across SNR levels and noise types without architectural changes or additional training data. Published at INTERSPEECH 2026 (Oral).</li>
+            </ul>
+            <ul class="pill-list">
+              <li>Audio-Visual Speech Recognition</li>
+              <li>LLMs</li>
+              <li>Information Bottleneck</li>
+            </ul>
+          </article>
+
           <article class="internship-item">
             <div class="internship-header">
               <h3 class="internship-title">StyleLip: Cross-Identity Speaking Style Transfer</h3>
-              <span class="internship-date">Oct 2025 - Mar 2026</span>
+              <span class="internship-date">Oct 2025 &ndash; Mar 2026</span>
             </div>
-            <p class="internship-org">
-              <strong>Imperial College London</strong><br>
-              Supervisors: Dr. Antoni Bigata, Dr. Stavros Petridis, Dr. Maja Pantic
-            </p>
-            <p class="internship-description">
-              Developed StyleLip, a few-shot framework for speaking style transfer in audio-driven lip-synchronization, capturing person-specific idiosyncratic lip movements across different identities using LoRA layers. Regularized training via synthetically generated multi-identity samples to prevent identity leakage. Introduced SSCS, a novel quantitative metric to measure speaking style transfer fidelity.
-            </p>
+            <p class="internship-org"><strong>Imperial College London</strong> &middot; Supervisors: <a href="https://antonibigata.github.io" target="_blank" rel="noopener">Dr. Antoni Bigata</a>, <a href="https://www.linkedin.com/in/stavros-petridis-4609a93/" target="_blank" rel="noopener">Dr. Stavros Petridis</a>, <a href="https://ibug.doc.ic.ac.uk/maja/" target="_blank" rel="noopener">Dr. Maja Pantic</a></p>
+            <ul class="pub-highlights">
+              <li>Developed StyleLip, a few-shot framework for speaking-style transfer in audio-driven lip synchronisation that reproduces person-specific lip movements across identities using LoRA layers in a base lip-sync model.</li>
+              <li>Regularised training with synthetic multi-identity samples sharing a speaking style to prevent identity leakage, achieving state-of-the-art performance as a plug-and-play solution.</li>
+              <li>Introduced SSCS, a quantitative metric for speaking-style transfer fidelity.</li>
+            </ul>
             <ul class="pill-list">
               <li>LoRA</li>
-              <li>Lip-Sync</li>
+              <li>Lip Synchronisation</li>
               <li>Style Transfer</li>
             </ul>
           </article>
 
-          <!-- Research Experience 4: Model Parity Alignment -->
           <article class="internship-item">
             <div class="internship-header">
               <h3 class="internship-title">When Big Models Train Small Ones</h3>
-              <span class="internship-date">Dec 2024 - Mar 2025</span>
+              <span class="internship-date">Dec 2024 &ndash; Mar 2025</span>
             </div>
-            <p class="internship-org">
-              <strong>IIT Jodhpur (VL2G Lab)</strong><br>
-              Supervisor: Dr. Anand Mishra
-            </p>
-            <p class="internship-description">
-              Designed Model Parity Alignment (MPA) for Visual Question Answering to train small VLMs (SmolVLM-500M, TinyLLaVA-2B, InternVL2-2B/4B) from large VLMs (Qwen2VL-7B, InternVL2-8B, GPT-4o) using unlabeled data. Developed disparity-aware training to mitigate hallucinations via automated QA pair generation and filtering. Achieved consistent accuracy gains up to 6 percent on VQA benchmarks including TextVQA, ST-VQA, OKVQA, MedicalVQA, and ChartQA.
-            </p>
+            <p class="internship-org"><strong>IIT Jodhpur, VL2G Lab</strong> &middot; Supervisor: <a href="https://vl2g.github.io/" target="_blank" rel="noopener">Dr. Anand Mishra</a> &middot; <a href="https://arxiv.org/pdf/2509.16633" target="_blank" rel="noopener">Paper</a></p>
+            <ul class="pub-highlights">
+              <li>Designed Model Parity Alignment (MPA) to train small VLMs (SmolVLM-500M, TinyLLaVA-2B, InternVL2-2B/4B) from large VLMs (Qwen2VL-7B, InternVL2-8B, GPT-4o) using unlabelled data.</li>
+              <li>Developed disparity-aware training that closes reasoning gaps and mitigates hallucination via automated QA-pair generation and filtering of disparity samples across OCR, commonsense and factual tasks.</li>
+              <li>Achieved accuracy gains of up to 6% on TextVQA, ST-VQA, OKVQA, MedicalVQA and ChartQA. Published at EMNLP 2025.</li>
+            </ul>
             <ul class="pill-list">
-              <li>PyTorch</li>
-              <li>VLMs</li>
+              <li>Vision-Language Models</li>
+              <li>Knowledge Transfer</li>
               <li>VQA</li>
             </ul>
           </article>
 
-          <!-- Research Experience 5: Hybrid Sample Synthesis Debiasing -->
           <article class="internship-item">
             <div class="internship-header">
               <h3 class="internship-title">Hybrid Sample Synthesis-Based Debiasing in Limited Data Settings</h3>
-              <span class="internship-date">Dec 2022 - Mar 2023</span>
+              <span class="internship-date">Dec 2022 &ndash; Mar 2023</span>
             </div>
-            <p class="internship-org">
-              <strong>IIT Jodhpur</strong><br>
-              Supervisor: Dr. Pratik Mazumder
-            </p>
-            <p class="internship-description">
-              Designed a hybrid sample synthesis method for low-data regimes, enabling ResNet classifiers to generalize under unknown biases. Built a dual-model framework to create bias-conflicting samples without relying on explicit bias annotations. Achieved up to 10 percent accuracy improvement over prior methods on benchmarks such as corrupted CIFAR-10, Colored MNIST, and BFFHQ.
-            </p>
+            <p class="internship-org"><strong>IIT Jodhpur</strong> &middot; Supervisor: <a href="https://sites.google.com/view/pratikmazumder/" target="_blank" rel="noopener">Dr. Pratik Mazumder</a> &middot; <a href="https://openaccess.thecvf.com/content/WACV2024/papers/Arora_Hybrid_Sample_Synthesis-Based_Debiasing_of_Classifier_in_Limited_Data_Setting_WACV_2024_paper.pdf" target="_blank" rel="noopener">Paper</a></p>
+            <ul class="pub-highlights">
+              <li>Designed a hybrid sample synthesis method for low-data regimes, enabling classifiers to generalise under unknown biases.</li>
+              <li>Built a dual-model framework that creates bias-conflicting samples without explicit bias annotations.</li>
+              <li>Achieved up to 10% accuracy improvement over prior methods on Corrupted CIFAR-10, Colored MNIST and BFFHQ. Published at WACV 2024.</li>
+            </ul>
             <ul class="pill-list">
-              <li>PyTorch</li>
-              <li>ResNet</li>
               <li>Debiasing</li>
+              <li>Fairness</li>
+              <li>Low-Data Learning</li>
             </ul>
           </article>
 
@@ -250,10 +213,6 @@
   <footer class="site-footer">
     <small>© <span id="year"></span> Piyush Arora · London, UK · <a href="mailto:piyush.arora25@imperial.ac.uk" style="color: inherit; text-decoration: underline;">piyush.arora25@imperial.ac.uk</a></small>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>
