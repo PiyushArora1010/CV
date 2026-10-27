@@ -13,3 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 });
+
+// Theme toggle (dark by default; choice persisted)
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.querySelector('.theme-toggle');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    const root = document.documentElement;
+    const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    root.dataset.theme = next;
+    localStorage.setItem('theme', next);
+  });
+});

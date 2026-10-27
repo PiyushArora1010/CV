@@ -21,6 +21,21 @@
   --display: 'EB Garamond', 'Source Serif 4', Georgia, serif;
 
   --measure: 860px;
+  color-scheme: light;
+}
+
+/* Dark theme (default; set on <html data-theme> before first paint) */
+:root[data-theme="dark"] {
+  --bg:     #17171a;
+  --fg:     #e6e3dc;
+  --muted:  #a9a6a0;
+  --faint:  #76736e;
+  --line:   #34343a;
+  --rule:   #c9c5bc;
+  --link:   #8fb4e6;
+  --link-hover: #b9d1f2;
+  --accent: #e08a80;
+  color-scheme: dark;
 }
 
 /* =========================================================
@@ -129,7 +144,6 @@ h3 { font-size: 1.1rem; font-weight: 600; }
 
 .nav-toggle {
   display: none;
-  margin-left: auto;
   background: none;
   border: 1px solid var(--line);
   color: var(--fg);
@@ -351,3 +365,21 @@ h3 { font-size: 1.1rem; font-weight: 600; }
 @media (max-width: 640px) {
   .entry-list li { grid-template-columns: 1fr; gap: 0; }
 }
+
+/* =========================================================
+   Theme toggle
+   ========================================================= */
+.theme-toggle {
+  background: none;
+  border: 0;
+  padding: 2px;
+  color: var(--faint);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.theme-toggle:hover { color: var(--fg); }
+.theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+@media (max-width: 720px) { .theme-toggle { margin-left: auto; } }
